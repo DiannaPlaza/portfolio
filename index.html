@@ -22,7 +22,8 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header>
+    <!-- end of navigation -->
+    <header id="home">
         <div class="wrapper">
             <h1>Hi, I'm Dianna Plaza a </h1>
             <div class="typedText">
@@ -36,6 +37,7 @@
 
         </div>
     </header>
+    <!-- end of header & start of main  -->
     <main id= "mainContent">
         <section class="about">
             <div class="wrapper">
@@ -47,10 +49,11 @@
     
                 </div>
                 <div class="myPhoto">
-                    <!-- find a photo of me to insert here -->
+                    
                 </div>
             </div>
         </section>
+        <!-- end of about me section -->
         <section class="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
@@ -68,39 +71,72 @@
                     </ul>
             </div>
         </section>
+        <!-- end of skills section -->
         <section class="projects">
             <div class="wrapper">
-                <h2>Projects</h2>
                 <div class="projectContainer">
-
+                    <h2>Projects</h2>
+                    <div class="project4">
+                        <h3>Project 4</h3>
+                        <h4></h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum deserunt recusandae dicta quis quas tempora explicabo.</p>
+                        <button class="live">View Live</button>
+                        <button class="repo">Github Repo</button>
+                    </div>
+                    <div class="project3">
+                        <h3>Project 3</h3>
+                        <h4>Html5 | Scss | Javascript | Firebase | React</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus cumque voluptates minima neque esse beatae iusto
+                        </p>
+                        <button class="live">View Live</button>
+                        <button class="repo">Github Repo</button>
+                    </div>
+                    <div class="project2">
+                        <h3>Mix it up !</h3>
+                        <h4>Html5 | Sass | Javascript | Rest Api</h4>
+                        <p>Mix it up is a pair programing project that uses a Cocktail API to display drink options based on the user's selection.</p>
+                        <button class="live">View Live</button>
+                        <button class="repo">Github Repo</button>
+                    </div>
+                    <div class="project1">
+                        <h3>Sophie</h3>
+                        <h4>Html5 | Css/Sass</h4>
+                        <p>Sophie is a multi-page, functional, and responsive website created from a provided PSD.</p>
+                        <button class="live">View Live</button>
+                        <button class="repo">Github Repo</button>
+                    </div>
                 </div>
             </div>
-        </section class="contact">
-        <div class="wrapper">
-            <h2>Let's Connect !</h2>
-            <p>If you would like to reach out to me just to chat, grab a coffee, or to hire me, please send me a message below or connect me via any of my socials. </p>
-            <div class="formContainer">
-                <form action="#" method="POST" class="contactForm" name="contactForm">
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" placeholder="Name">
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" placeholder="Email">
-                    <label for="message" class="sr-only">Message for me</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
-
-                    <button type="submit">Send Message</button>
-                    <ul class="contactIcons">
-                        <li><i class="fa-brands fa-linkedin"></i></li>
-                        <li><i class="fa-solid fa-envelope"></i></li>
-                        <li><i class="fa-solid fa-calendar-days"></i></li>
-                        <li><i class="fa-brands fa-github"></i></li>
-                    </ul>
-
+            <!-- end of project section -->
+        </section>
+        <section class="contact">
+            <div class="wrapper">
+                <h2>Let's Connect !</h2>
+                <p>If you would like to reach out to me just to chat, grab a coffee, or to hire me, please send me a message below or connect me via any of my socials. </p>
+                <div class="formContainer">
+                    <form action="#" method="POST" class="contactForm" name="contactForm">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+                        <label for="message" class="sr-only">Message for me</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
+    
+                        <button type="submit">Send Message</button>
+                        <div class="contactIcons">
+                            <a href="https://www.linkedin.com/in/dianna-plaza/" aria-label="linkedin profile link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:dianna.s.plaza@gmail.com" aria-label="my email address"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://calendly.com/dianna-plaza" aria-label="my calendly link"><i class="fa-solid fa-calendar-days"></i></a>
+                            <a href="https://github.com/DiannaPlaza" aria-label="github profile link"><i class="fa-brands fa-github"></i></a>
+                        </div>
+    
+                </div>
             </div>
-        </div>
-
+        </section>
+        <!-- end of contact section -->
     </main>
     <footer>
+        <a href="#home">Back to top</a>
         <p>Developed in 2022 &copy; by Dianna Plaza </p>
     </footer>
     

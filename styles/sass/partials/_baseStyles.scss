@@ -1,0 +1,24 @@
+.wrapper{
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+ul, li {
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4{
+    text-transform: uppercase;
+}
