@@ -19,3 +19,13 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     left: 0;
 }
 
+.wrapper{
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}

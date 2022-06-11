@@ -1,0 +1,33 @@
+@font-face{
+    font-family: 'Lora', serif;
+    src: url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap");
+    font-weight: 500;
+
+
+}
+
+@font-face{
+    font-family: 'Quicksand', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+}
+
+ul, li {
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, .navUl{
+    text-transform: uppercase;
+}
+
+
+p{
+    font-family: $bodyFont;
+    line-height: 30px;
+}
+

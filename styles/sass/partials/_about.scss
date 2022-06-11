@@ -1,0 +1,17 @@
+.aboutContainer{
+    display: flex;
+    justify-content: space-between;
+        .myInfo{
+            width: 50%;
+
+        }
+        .myPhoto{
+            width: 50%;
+            padding-left: 50px;
+            img{
+                height: 300px;
+                
+            }
+        }
+}
+

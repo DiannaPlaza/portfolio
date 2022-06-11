@@ -11,27 +11,45 @@
 </head>
 <body>
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
-    <nav class="navBar">
-        <div class="initals">
-            <p>DP</p>
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="#projects"> Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- end of navigation -->
+    
     <header id="home">
-        <div class="wrapper">
-            <h1>Hi, I'm Dianna Plaza a </h1>
-            <div class="typedText">
-                <p>Front-End Developer</p>
+        <nav class="navBar">
+            <div class="wrapper">
+                <ul class="navUl">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects"> Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+    
             </div>
-            <p>based in Toronto, Ontario</p>
-            <button class="contactMe">Get in Touch</button>
-            <div class="arrow">
+            <!-- <div class="slideOutNav">
+                <div class="buttonContainer">
+                    <button class="closeButton">
+                        <img src="./assets/menu-close.svg" alt="close navigation">
+                    </button>
+                </div>
+                <nav>
+                    <ul class="mainMenu">
+                        <li><a href="./shop.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> -->
+        </nav>
+        <!-- end of navigation -->
+        <div class="wrapper">
+            <div class="headerText">
+                <h1>Hi, I'm Dianna Plaza </h1>
+                <div class="typed">
+                    <p><span class="typedText">Front-End Developer</span></p>
+                </div>
+                <button class="contactMe"><a href="#contact">Get in Touch</button></a>
+
+            </div>
+            <div class="arrowBounce">
                 <i class="fa-solid fa-arrow-down"></i>
             </div>         
 
@@ -41,15 +59,19 @@
     <main id= "mainContent">
         <section class="about">
             <div class="wrapper">
-                <div class="myInfo">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos aspernatur dolorem ratione, consequatur atque illum qui culpa laudantium rerum. Libero explicabo deserunt molestias voluptas optio odio placeat sequi quasi.
-                    Illum pariatur corrupti ad. Doloribus consectetur molestiae ut odio fugit aliquam numquam perferendis itaque deleniti asperiores. Soluta et vero maiores, iste ipsa consequuntur sed neque, ducimus, quisquam iure sit molestias!
-                    Dicta reiciendis, unde dignissimos qui obcaecati eligendi possimus eveniet cum pariatur consectetur porro nemo. Enim vero quae iusto corrupti? Rem animi reprehenderit repellat, eos atque odio. Delectus adipisci ducimus impedit?</p>
-    
-                </div>
-                <div class="myPhoto">
-                    
+                <div class="aboutContainer">
+                    <div class="myInfo">
+                        <h2>About Me</h2>
+                        <p> I'm a Law Clerk turned Front-End Developer that is based in Toronto, Ontario. I recently graduated from Juno College's Immersive Web Development Bootcamp. Lorem ipsum dolor sit amet consectetur adipisicing elit. At quae quo delectus molestias nisi consequatur temporibus enim tempore veniam eveniet placeat, debitis quibusdam quod corrupti atque, labore corporis soluta esse!
+                        </p>
+                        <p>When I'm not coding, you can find me enjoying the outdoors, whether it be playing with my kids, riding bikes, or going for a hike. I love watching scary movies, playing board games, and recently I have been learning how to dance.  </p>
+        
+                    </div>
+                    <div class="myPhoto">
+                        <img src="./assets/photo.jpg" alt="a photo of dianna plaza">
+                        
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -58,16 +80,15 @@
             <div class="wrapper">
                 <h2>Skills</h2>
                     <ul class="skillsIcon">
-                        <li><i class="fa-brands fa-html5"><p>Html</p></i></li>
-                        <li><i class="fa-brands fa-css3"><p>Css</p></i></li>
+                        <li><i class="fa-brands fa-html5"><p>Html5</p></i></li>
+                        <li><i class="fa-brands fa-css3"><p>Css3</p></i></li>
                         <li><i class="fa-brands fa-sass"><p>Sass</p></i></li>
                         <li><i class="fa-brands fa-js-square"><p>Javascript</p></i></li>
-                        <li><i class="devicon-firebase-plain"></i><p>Firebase</p></li>
+                        <li><i class="devicon-firebase-plain"><p>Firebase</p></i></li>
                         <li><i class="fa-brands fa-react"><p>React</p></i></li>
-                        <li><i class="fa-brands fa-github"></i><p>Github/Git</p></li>
-                        <li><i class="fa-solid fa-universal-access"></i><p>Accessability</p></li>
-                        <li><i class="fa-solid fa-laptop-mobile"></i><p>Responsive Design</p></li>
-                        <li></li>
+                        <li><i class="fa-brands fa-github"><p>Github/Git</p></i></li>
+                        <li><i class="fa-solid fa-universal-access"><p>Accessability</p></i></li>
+                        <li><i class="fa-solid fa-mobile-screen"><p>Responsive Design</p></i></li>
                     </ul>
             </div>
         </section>
@@ -109,7 +130,7 @@
             </div>
             <!-- end of project section -->
         </section>
-        <section class="contact">
+        <section id="contact">
             <div class="wrapper">
                 <h2>Let's Connect !</h2>
                 <p>If you would like to reach out to me just to chat, grab a coffee, or to hire me, please send me a message below or connect me via any of my socials. </p>
@@ -139,6 +160,10 @@
         <a href="#home">Back to top</a>
         <p>Developed in 2022 &copy; by Dianna Plaza </p>
     </footer>
+
+    <script src="./scripts.js">
+
+    </script>
     
 </body>
 </html>
