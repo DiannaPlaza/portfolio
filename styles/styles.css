@@ -271,6 +271,13 @@ h1, h2, h3, h4, .navUl {
   text-transform: uppercase;
 }
 
+h2 {
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 2rem;
+}
+
 p {
   font-family: "Quicksand", sans-serif;
   line-height: 30px;
@@ -303,7 +310,6 @@ p {
 
 header {
   height: 100vh;
-  background-color: #F0E6EF;
 }
 
 .headerText {
@@ -318,8 +324,7 @@ header {
   margin: 0;
   padding-top: 80px;
 }
-
-.typed p {
+.headerText .typed p {
   font-size: 3rem;
 }
 
@@ -345,7 +350,7 @@ header {
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
   color: #F0A6CA;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 @-webkit-keyframes bounce {
@@ -377,6 +382,13 @@ header {
   }
 }
 
+.about {
+  background-color: #9C89B8;
+}
+.about h2 {
+  color: #EFC3E6;
+}
+
 .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,28 +396,72 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
 }
 .aboutContainer .myInfo {
   width: 50%;
 }
 .aboutContainer .myPhoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 50%;
-  padding-left: 50px;
 }
 .aboutContainer .myPhoto img {
-  height: 300px;
+  height: 400px;
+  margin: auto;
+  border-radius: 10px;
 }
 
-.skillsIcon {
+.skills {
+  background-color: #F0E6EF;
+}
+.skills h2 {
+  color: #F0A6CA;
+}
+.skills .skillsIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
+  color: #9C89B8;
+}
+.skills .skillsIcon li:hover {
+  color: white;
 }
 
-.skillsIcon li i:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(#F0A6CA), to(#EFC3E6));
-  background-image: linear-gradient(90deg, #F0A6CA, #EFC3E6);
+.allProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.allProjects .projectPhoto {
+  width: 50%;
+}
+.allProjects .projectText {
+  width: 50%;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactContainer .contactText {
+  width: 40%;
+}
+.contactContainer .formContainer {
+  width: 60%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

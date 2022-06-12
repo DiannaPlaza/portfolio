@@ -1,8 +1,16 @@
-.skillsIcon{
-    display: flex;
-    justify-content: space-between;
-}
+.skills{
+    background-color: $background;
+    h2{
+        color: $primary;
+    }
+    .skillsIcon{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: $grape;
+    }
 
-.skillsIcon li i:hover{
-    background-image: linear-gradient(90deg, $primary, $secondary);
+    .skillsIcon li:hover{
+        color: white;
+    }
 }

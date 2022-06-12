@@ -1,17 +1,26 @@
+.about{
+    background-color: $grape;
+        h2{
+            color: $secondary;
+        }
+}
+
 .aboutContainer{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
         .myInfo{
             width: 50%;
 
         }
         .myPhoto{
+            display: flex;
             width: 50%;
-            padding-left: 50px;
-            img{
-                height: 300px;
-                
-            }
+                img{
+                height: 400px;  
+                margin: auto;
+                border-radius: 10px;
+                }   
         }
 }
 
