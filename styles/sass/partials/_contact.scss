@@ -5,6 +5,31 @@
         width: 40%;
     }
     .formContainer{
+        margin-left: 20px;
+
         width: 60%;
+        .contactForm{
+            input{
+                width: 90%;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+            textarea{
+                width: 90%;
+                margin-bottom: 10px;
+            }
+            button{
+                border-radius: 50px; 
+                padding: 10px 15px;
+                background-color: $primary;
+                color: white;
+                font-size: 1.3rem;
+                width: 90%;
+                border:none;
+            }
+        }
     }
+}
+button:hover{
+    background-image: linear-gradient(90deg, $peri, $secondary);
 }

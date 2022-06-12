@@ -276,6 +276,7 @@ h2 {
   text-align: center;
   padding: 30px;
   font-size: 2rem;
+  color: #F0A6CA;
 }
 
 p {
@@ -382,40 +383,42 @@ header {
   }
 }
 
-.about {
-  background-color: #9C89B8;
+#about {
+  background-color: #F0E6EF;
 }
-.about h2 {
-  color: #EFC3E6;
+#about h2 {
+  color: #F0A6CA;
 }
 
 .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding-bottom: 20px;
 }
 .aboutContainer .myInfo {
   width: 50%;
+  margin-right: 50px;
 }
 .aboutContainer .myPhoto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 50%;
 }
-.aboutContainer .myPhoto img {
-  height: 400px;
-  margin: auto;
-  border-radius: 10px;
+
+.Photos {
+  height: 500px;
+  background-image: url("/assets/dianna.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.skills {
-  background-color: #F0E6EF;
+.Photos:hover {
+  background-image: url("/assets/dianna-two.jpg");
 }
+
 .skills h2 {
   color: #F0A6CA;
 }
@@ -430,7 +433,11 @@ header {
   color: #9C89B8;
 }
 .skills .skillsIcon li:hover {
-  color: white;
+  color: #F0A6CA;
+}
+
+#projects {
+  background-color: #F0E6EF;
 }
 
 .allProjects {
@@ -454,7 +461,31 @@ header {
   width: 40%;
 }
 .contactContainer .formContainer {
+  margin-left: 20px;
   width: 60%;
+}
+.contactContainer .formContainer .contactForm input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.contactContainer .formContainer .contactForm textarea {
+  width: 90%;
+  margin-bottom: 10px;
+}
+.contactContainer .formContainer .contactForm button {
+  border-radius: 50px;
+  padding: 10px 15px;
+  background-color: #F0A6CA;
+  color: white;
+  font-size: 1.3rem;
+  width: 90%;
+  border: none;
+}
+
+button:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#B8BEDD), to(#EFC3E6));
+  background-image: linear-gradient(90deg, #B8BEDD, #EFC3E6);
 }
 
 footer {

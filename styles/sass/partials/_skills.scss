@@ -1,5 +1,5 @@
 .skills{
-    background-color: $background;
+
     h2{
         color: $primary;
     }
@@ -11,6 +11,6 @@
     }
 
     .skillsIcon li:hover{
-        color: white;
+        color: $primary;
     }
 }

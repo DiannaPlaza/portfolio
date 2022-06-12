@@ -1,26 +1,31 @@
-.about{
-    background-color: $grape;
+#about{
+    background-color: $background;
         h2{
-            color: $secondary;
+            color: $primary;
         }
 }
 
 .aboutContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-bottom: 20px;
         .myInfo{
             width: 50%;
-
+            margin-right: 50px;
         }
         .myPhoto{
-            display: flex;
-            width: 50%;
-                img{
-                height: 400px;  
-                margin: auto;
-                border-radius: 10px;
-                }   
+            width: 50%;                
         }
 }
 
+.Photos{
+    height: 500px;
+    background-image: url('/assets/dianna.jpg');
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Photos:hover{
+    background-image: url('/assets/dianna-two.jpg');
+}
