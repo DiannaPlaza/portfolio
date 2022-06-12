@@ -1,8 +1,17 @@
 .contactContainer{
     display: flex;
+    margin-bottom: 50px;
 
     .contactText{
         width: 40%;
+            a{
+                color: $grape;
+                font-size: 2rem;
+                padding: 10px;
+            }
+    }
+    .contactText a:hover{
+        color: $secondary;
     }
     .formContainer{
         margin-left: 20px;
@@ -13,10 +22,12 @@
                 width: 90%;
                 padding: 5px;
                 margin-bottom: 10px;
+                border-color: $grape;
             }
             textarea{
                 width: 90%;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
+                border-color: $grape;
             }
             button{
                 border-radius: 50px; 

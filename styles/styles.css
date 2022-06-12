@@ -275,8 +275,12 @@ h2 {
   margin: 0;
   text-align: center;
   padding: 30px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #F0A6CA;
+}
+
+h3 {
+  font-size: 1.3rem;
 }
 
 p {
@@ -419,6 +423,12 @@ header {
   background-image: url("/assets/dianna-two.jpg");
 }
 
+.skills i {
+  font-size: 3rem;
+}
+.skills p {
+  font-size: 1.3rem;
+}
 .skills h2 {
   color: #F0A6CA;
 }
@@ -426,11 +436,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
   color: #9C89B8;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .skills .skillsIcon li:hover {
   color: #F0A6CA;
@@ -438,6 +450,7 @@ header {
 
 #projects {
   background-color: #F0E6EF;
+  margin-top: 50px;
 }
 
 .allProjects {
@@ -447,18 +460,35 @@ header {
 }
 .allProjects .projectPhoto {
   width: 50%;
+  margin-bottom: 60px;
 }
 .allProjects .projectText {
   width: 50%;
+}
+.allProjects .projectText .live, .allProjects .projectText .repo {
+  border-radius: 50px;
+  padding: 10px 15px;
+  background-color: #F0A6CA;
+  color: white;
+  border: none;
 }
 
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
 }
 .contactContainer .contactText {
   width: 40%;
+}
+.contactContainer .contactText a {
+  color: #9C89B8;
+  font-size: 2rem;
+  padding: 10px;
+}
+.contactContainer .contactText a:hover {
+  color: #EFC3E6;
 }
 .contactContainer .formContainer {
   margin-left: 20px;
@@ -468,10 +498,12 @@ header {
   width: 90%;
   padding: 5px;
   margin-bottom: 10px;
+  border-color: #9C89B8;
 }
 .contactContainer .formContainer .contactForm textarea {
   width: 90%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  border-color: #9C89B8;
 }
 .contactContainer .formContainer .contactForm button {
   border-radius: 50px;
@@ -488,11 +520,25 @@ button:hover {
   background-image: linear-gradient(90deg, #B8BEDD, #EFC3E6);
 }
 
-footer {
+.backToTop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  color: #9C89B8;
+}
+
+footer {
+  background-color: #F0E6EF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #F0A6CA;
 }

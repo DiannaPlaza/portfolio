@@ -1,12 +1,21 @@
 #projects{
     background-color: $background;
+    margin-top: 50px;
 }
 .allProjects{
     display: flex;
         .projectPhoto{
             width: 50%;
+            margin-bottom: 60px;
         }
         .projectText{
             width: 50%;
+            .live, .repo{
+                border-radius: 50px; 
+                padding: 10px 15px;
+                background-color: $primary;
+                color: white;
+                border:none;
+            }
         }
 }

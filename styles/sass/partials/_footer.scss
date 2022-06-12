@@ -1,6 +1,19 @@
-footer{
+.backToTop{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    color: $grape;
+}
+
+
+footer{
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    color: $primary;
+    
 
 
 }
+
