@@ -1,7 +1,24 @@
+@media(max-width: 940px){
+
+}
 @media(max-width: 768px){
+    .navUl{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navUl.show{
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
 
 }
 
 @media(max-width: 480px){
+    // header{
+    //     height: auto;
+    // }
    
 }

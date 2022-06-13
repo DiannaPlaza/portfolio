@@ -15,7 +15,10 @@
     <header id="home">
         <nav class="navBar">
             <div class="wrapper">
-                <ul class="navUl">
+                <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="navUl" id="navUl">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects"> Projects</a></li>
@@ -23,21 +26,6 @@
                 </ul>
     
             </div>
-            <!-- <div class="slideOutNav">
-                <div class="buttonContainer">
-                    <button class="closeButton">
-                        <img src="./assets/menu-close.svg" alt="close navigation">
-                    </button>
-                </div>
-                <nav>
-                    <ul class="mainMenu">
-                        <li><a href="./shop.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div> -->
         </nav>
         <!-- end of navigation -->
         <div class="wrapper">
@@ -172,7 +160,7 @@
 
                     </div>
                     <div class="formContainer">
-                        <form action="#" method="POST" class="contactForm" name="contactForm">
+                        <form action="https://formspree.io/f/mgedqnbb" method="POST" class="contactForm" name="contactForm" form id="form">
                             <label for="name" class="sr-only">Name</label>
                             <input type="text" id="name" placeholder="Name">
                             <label for="email" class="sr-only">Email</label>
@@ -181,11 +169,10 @@
                             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
         
                             <button type="submit">Send Message</button>
-                            </div>
-                </div>
-                    
+                        </form>
                     </div>
                 </div>
+                    
             </div>
         </section>
         <!-- end of contact section -->

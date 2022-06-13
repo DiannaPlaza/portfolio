@@ -1,3 +1,6 @@
+.navBar{
+    flex-wrap: wrap;
+}
 .navUl{
     display: flex;
     justify-content: right;
@@ -16,4 +19,28 @@
     padding: 5px 10px;
     border-radius: 50px; 
     text-decoration-line: underline;
+}
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: $primary;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.hamburger:focus{
+    outline: none;
 }
