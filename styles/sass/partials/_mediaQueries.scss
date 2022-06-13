@@ -1,14 +1,3 @@
-@media(max-width: 940px){
-    header{
-        // height: 900px;
-    }
-
-   .allProjects{
-    //    align-items: center;
-   }
-
-
-}
 @media(max-width: 768px){
     .navUl{
         display: none;
@@ -42,6 +31,7 @@
 
 
     .allProjects{
+        display: flex;
         flex-direction: column;
             .projectPhoto{
                 width: 100%;
@@ -57,7 +47,11 @@
             }
     }
 
-    .allProjects:nth-child(3 + 5){
+    .allProjects:nth-child(3){
+        flex-direction: column-reverse;
+
+    }
+    .allProjects:nth-child(5){
         flex-direction: column-reverse;
 
     }
