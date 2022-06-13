@@ -71,8 +71,27 @@
 
 
 }
-
+@media(max-width: 660px){
+    .headerText h1{
+        font-size: 2.5rem;
+    }
+    .typed p{
+        font-size: 1.9rem;
+    }
+}
 @media(max-width: 480px){
+    .header{
+        height: auto;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .typed p{
+        font-size: 0.5rem;
+    }
+    
 
     .arrowBounce{
         display: none;
