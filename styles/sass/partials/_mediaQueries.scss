@@ -26,13 +26,6 @@
         display: block;
     }
 
-    header{
-        height: auto;
-    }
-    .arrowBounce{
-        display: none;
-    }
-
     .aboutContainer{
         flex-direction: column;
         .myInfo{
@@ -46,6 +39,7 @@
     .skillsIcon li{
         padding: 20px;
     }
+
 
     .allProjects{
         flex-direction: column;
@@ -63,12 +57,29 @@
             }
     }
 
+    .allProjects:nth-child(3 + 5){
+        flex-direction: column-reverse;
+
+    }
+
+    .contactContainer{
+        flex-direction: column;
+            .contactText{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .formContainer{
+                width: 100%;
+                justify-content: center;
+            }
+    }
+
+
 }
 
 @media(max-width: 480px){
-    header{
-        height: auto;
-    }
+
     .arrowBounce{
         display: none;
     }

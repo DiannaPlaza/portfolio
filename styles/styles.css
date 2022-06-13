@@ -598,14 +598,6 @@ footer {
     display: block;
   }
 
-  header {
-    height: auto;
-  }
-
-  .arrowBounce {
-    display: none;
-  }
-
   .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -623,30 +615,25 @@ footer {
     padding: 20px;
   }
 
-  .allProjects {
+  .contactContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .allProjects .projectPhoto {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .allProjects .projectText {
+  .contactContainer .contactText {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
-  .allProjects .projectText .live, .allProjects .projectText .repo {
-    margin-right: 20px;
+  .contactContainer .formContainer {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 480px) {
-  header {
-    height: auto;
-  }
-
   .arrowBounce {
     display: none;
   }
