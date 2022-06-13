@@ -679,16 +679,27 @@ footer {
   }
 }
 @media (max-width: 480px) {
-  .header {
-    height: auto;
+  #home {
+    height: 30vh;
   }
 
-  h1 {
-    font-size: 2rem;
+  .headerText {
+    padding-top: 100px;
+  }
+  .headerText h1 {
+    font-size: 1.8rem;
+    padding-top: 0px;
+  }
+  .headerText .typed p {
+    font-size: 1rem;
   }
 
-  .typed p {
-    font-size: 0.5rem;
+  .contactMe {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
   }
 
   .arrowBounce {

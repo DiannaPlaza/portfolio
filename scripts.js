@@ -6,3 +6,5 @@ const navUl = document.getElementById('navUl');
 hamburger.addEventListener('click', () => {
     navUl.classList.toggle('show')
 })
+
+document.getElementById("form").reset(); 

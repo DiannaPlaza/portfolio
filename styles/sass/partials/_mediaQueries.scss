@@ -80,18 +80,30 @@
     }
 }
 @media(max-width: 480px){
-    .header{
-        height: auto;
+    #home{
+        height: 30vh;
+    }
+    .headerText{
+        padding-top: 100px;
+        h1{
+            font-size: 1.8rem;
+            padding-top: 0px;
+        }
+
+        .typed p{
+            font-size: 1rem;
+        }
+
     }
 
-    h1{
-        font-size: 2rem;
+    .contactMe{
+        margin-bottom: 50px;
     }
 
-    .typed p{
-        font-size: 0.5rem;
-    }
     
+    h2{
+        font-size: 1.8rem;
+    }
 
     .arrowBounce{
         display: none;
