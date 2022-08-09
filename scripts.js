@@ -7,6 +7,5 @@ hamburger.addEventListener('click', () => {
     navUl.classList.toggle('show')
 })
 
-// clear form
-document.getElementById("form").reset(); 
+
 

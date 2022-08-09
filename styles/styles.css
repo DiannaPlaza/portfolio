@@ -515,39 +515,20 @@ header {
   margin-bottom: 50px;
 }
 .contactContainer .contactText {
-  width: 40%;
+  width: 90%;
+  text-align: center;
 }
 .contactContainer .contactText a {
   color: #9C89B8;
   font-size: 2rem;
   padding: 10px;
 }
+.contactContainer .contactText i {
+  font-size: 2.4rem;
+  padding: 30px;
+}
 .contactContainer .contactText a:hover {
   color: #EFC3E6;
-}
-.contactContainer .formContainer {
-  margin-left: 20px;
-  width: 60%;
-}
-.contactContainer .formContainer .contactForm input {
-  width: 90%;
-  padding: 5px;
-  margin-bottom: 10px;
-  border-color: #9C89B8;
-}
-.contactContainer .formContainer .contactForm textarea {
-  width: 90%;
-  margin-bottom: 20px;
-  border-color: #9C89B8;
-}
-.contactContainer .formContainer .contactForm button {
-  border-radius: 50px;
-  padding: 10px 15px;
-  background-color: #F0A6CA;
-  color: white;
-  font-size: 1.3rem;
-  width: 90%;
-  border: none;
 }
 
 button:hover {
@@ -578,6 +559,23 @@ footer {
   color: #F0A6CA;
 }
 
+@media (max-width: 1180px) {
+  .skillsIcon li {
+    padding: 20px;
+  }
+  h3 {
+    margin: 0;
+  }
+  .allProjects button {
+    margin: 0px 20px 20px;
+  }
+  .projectPhoto, .projectText {
+    margin: 20px;
+  }
+  .contactContainer .contactText {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .navUl {
     display: none;
@@ -624,7 +622,7 @@ footer {
   }
   .allProjects .projectPhoto {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 0px;
   }
   .allProjects .projectText {
     width: 100%;
@@ -632,7 +630,7 @@ footer {
     margin-bottom: 20px;
   }
   .allProjects .projectText .live, .allProjects .projectText .repo {
-    margin-right: 20px;
+    margin: 20px;
   }
   .allProjects:nth-child(3) {
     -webkit-box-orient: vertical;
@@ -697,5 +695,9 @@ footer {
   }
   .skillsIcon li {
     padding: 14px;
+    padding-left: 5px;
+  }
+  .contactContainer .contactText i {
+    padding: 10px;
   }
 }

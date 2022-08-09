@@ -1,3 +1,26 @@
+@media(max-width: 1180px){
+    .skillsIcon li{
+        padding: 20px;
+    }
+
+    h3{
+        margin: 0;
+    }
+
+
+    .allProjects button{
+        margin: 0px 20px 20px;
+        
+    }
+
+    .projectPhoto, .projectText{
+        margin: 20px;
+    }
+
+    .contactContainer .contactText{
+        width: 100%;
+    }
+}
 @media(max-width: 768px){
     .navUl{
         display: none;
@@ -36,14 +59,15 @@
         flex-direction: column;
             .projectPhoto{
                 width: 100%;
-                margin-bottom: 10px;
+                margin: 0px;
+
             }
             .projectText{
                 width: 100%;
                 text-align: center;
                 margin-bottom: 20px;
                     .live, .repo{
-                        margin-right: 20px;
+                        margin: 20px;
                     }
             }
     }
@@ -111,6 +135,11 @@
     }
     .skillsIcon li{
         padding: 14px;
+        padding-left: 5px;
+    }
+
+    .contactContainer .contactText i{
+        padding: 10px;
     }
 
 }
