@@ -1,16 +1,13 @@
 @font-face{
-    font-family: 'Lobster Two', cursive;
-    src: url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+    font-family: 'Yeseva One', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
     font-weight: 400;
-    font-style: italic;
-
-
 }
 
 
 @font-face{
-    font-family: 'Quicksand', sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+    font-family: 'Nunito', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 }
 
 ul, li {
@@ -25,6 +22,7 @@ a{
 
 h1, h2, h3, h4, .navUl{
     text-transform: uppercase;
+    font-family: $headingFont;
 }
 h2{
     margin: 0;
@@ -32,7 +30,6 @@ h2{
     padding: 30px;
     font-size: 2.2rem;
     color: $primary;
-    font-family: 'Lobster Two', cursive;
 }
 
 h3{
