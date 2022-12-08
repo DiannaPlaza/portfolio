@@ -249,14 +249,18 @@ img {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
-  font-family: "Yeseva One", cursive;
-  src: url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Nunito", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 }
 ul, li {
   list-style: none;
@@ -269,7 +273,7 @@ a {
 
 h1, h2, h3, h4, .navUl {
   text-transform: uppercase;
-  font-family: "Yeseva One", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 h2 {
@@ -285,64 +289,65 @@ h3 {
 }
 
 p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 30px;
 }
 
-.navBar {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.navMenu {
+  position: fixed;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  z-index: 100;
+  background-color: #9C89B8;
+  color: #F0E6EF;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
-.navUl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin: 0;
+.showNavMenu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
-.navUl li {
-  margin: 30px 15px 20px;
-  font-size: 1.3rem;
+
+.navMenu li {
+  text-align: center;
+  margin: 80px 0;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.navMenu a:hover, .navMenu a:focus {
   color: #F0A6CA;
-}
-
-.navUl li a:hover, .navUl li a:focus {
-  background-image: -webkit-gradient(linear, left top, right top, from(#F0A6CA), to(#EFC3E6));
-  background-image: linear-gradient(90deg, #F0A6CA, #EFC3E6);
-  color: white;
   padding: 5px 10px;
-  border-radius: 50px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  border-radius: 50%;
 }
 
-.menuItem {
-  display: block;
-  margin: 2rem 4rem;
-  font-size: 1.8rem;
-  color: white;
-  text-decoration: none;
-}
-
-.menuItem:hover {
-  text-decoration: underline;
-}
-
-.hamburger {
-  background-color: transparent;
-  border: 0;
-  display: none;
-  color: #F0A6CA;
-  font-size: 2.5rem;
+.burger {
+  position: fixed;
+  z-index: 100;
+  top: 50px;
+  right: 50px;
+  padding: 10px;
+  border: none;
   cursor: pointer;
-  margin-top: 30px;
+  font-size: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
 }
 
-.hamburger:focus {
-  outline: none;
+.burger .fa-xmark {
+  display: none;
 }
 
 header {
@@ -355,7 +360,7 @@ header {
   color: #F0A6CA;
 }
 .headerText h1 {
-  font-family: "Yeseva One", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 4.5rem;
   font-style: italic;
   margin: 0;
@@ -492,6 +497,7 @@ header {
 button:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#B8BEDD), to(#EFC3E6));
   background-image: linear-gradient(90deg, #B8BEDD, #EFC3E6);
+  border-radius: 50%;
 }
 
 .backToTop {
@@ -518,6 +524,9 @@ footer {
 }
 
 @media (max-width: 1180px) {
+  .burger {
+    right: 10px;
+  }
   .skillsIcon li {
     padding: 20px;
   }
@@ -535,25 +544,6 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .navUl {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  .navUl li {
-    margin: 10px;
-  }
-  .navUl.show {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .hamburger {
-    display: block;
-  }
   .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -577,6 +567,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .allProjects .projectPhoto {
     width: 100%;
@@ -630,7 +623,7 @@ footer {
 }
 @media (max-width: 480px) {
   #home {
-    height: 90vh;
+    height: 80vh;
   }
   .headerText {
     padding-top: 100px;
@@ -647,9 +640,6 @@ footer {
   }
   h2 {
     font-size: 1.8rem;
-  }
-  .arrowBounce {
-    display: none;
   }
   .skillsIcon li {
     padding: 14px;

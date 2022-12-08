@@ -1,4 +1,7 @@
 @media(max-width: 1180px){
+    .burger{
+        right: 10px;
+    }
     .skillsIcon li{
         padding: 20px;
     }
@@ -22,23 +25,6 @@
     }
 }
 @media(max-width: 768px){
-    .navUl{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        li{
-            margin: 10px;
-        }
-    }
-
-    .navUl.show{
-        display: flex;
-    }
-    
-    .hamburger{
-        display: block;
-    }
-
     .aboutContainer{
         flex-direction: column;
         .myInfo{
@@ -57,6 +43,7 @@
     .allProjects{
         display: flex;
         flex-direction: column;
+        align-items: center;
             .projectPhoto{
                 width: 100%;
                 margin: 0px;
@@ -106,7 +93,7 @@
 }
 @media(max-width: 480px){
     #home{
-        height: 90vh;
+        height: 80vh;
     }
     .headerText{
         padding-top: 100px;
@@ -130,9 +117,6 @@
         font-size: 1.8rem;
     }
 
-    .arrowBounce{
-        display: none;
-    }
     .skillsIcon li{
         padding: 14px;
         padding-left: 5px;
