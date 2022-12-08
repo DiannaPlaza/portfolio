@@ -1,47 +1,49 @@
-.navBar{
-    flex-wrap: wrap;
-}
-.navUl{
-    display: flex;
-    justify-content: right;
-    margin: 0;
-
-    li{
-        margin: 30px 15px 20px;
-        font-size: 1.3rem;
-        color: $primary;
-    }
+.navMenu{
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  z-index: 100;
+  background-color:$grape;
+  color: $background;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
-.navUl li a:hover, .navUl li a:focus{
-    background-image: linear-gradient(90deg, $primary, $secondary);
-    color: white;
+.showNavMenu{
+transform: translateY(0);
+}
+
+  .navMenu li {
+    text-align: center;
+    margin: 80px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  
+  .navMenu a:hover, .navMenu a:focus {
+  color: $primary;
     padding: 5px 10px;
-    border-radius: 50px; 
     text-decoration-line: underline;
-}
-.menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
-}
+    border-radius: 50%;
+  }
 
-.menuItem:hover {
-    text-decoration: underline;
-}
-.hamburger{
-    background-color: transparent;
-    border: 0;
-    display: none;
-    color: $primary;
-    font-size: 2.5rem;
-    cursor: pointer;
-    margin-top: 30px;
-}
 
-.hamburger:focus{
-    outline: none;
+.burger{
+  position: fixed;
+  z-index: 100;
+  top: 50px;
+  right: 50px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  appearance: none;
+  background: none;
+  outline: none;
+}
+.burger .fa-xmark{
+  display: none;
 }
 
