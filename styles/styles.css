@@ -327,7 +327,6 @@ p {
   padding: 5px 10px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  border-radius: 50%;
 }
 
 .burger {
@@ -365,9 +364,66 @@ header {
   font-style: italic;
   margin: 0;
   padding-top: 80px;
+  -webkit-animation: greeting 2s both;
+  animation: greeting 2s both;
 }
-.headerText .typed p {
+@-webkit-keyframes greeting {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes greeting {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.headerText .typed {
   font-size: 3rem;
+  opacity: 0;
+  -webkit-animation: slideIn 2s both;
+  animation: slideIn 1s both;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .contactMe {
@@ -497,7 +553,6 @@ header {
 button:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#B8BEDD), to(#EFC3E6));
   background-image: linear-gradient(90deg, #B8BEDD, #EFC3E6);
-  border-radius: 50%;
 }
 
 .backToTop {
@@ -624,6 +679,12 @@ footer {
 @media (max-width: 480px) {
   #home {
     height: 80vh;
+  }
+  .burger {
+    font-size: 30px;
+  }
+  .navMenu li {
+    font-size: 30px;
   }
   .headerText {
     padding-top: 100px;

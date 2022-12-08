@@ -1,36 +1,66 @@
-header{
+header {
     height: 100vh;
 }
-.headerText{
+
+.headerText {
     text-align: center;
     padding-top: 200px;
     color: $primary;
-    h1{
+
+    h1 {
         font-family: $headingFont;
         font-size: 4.5rem;
         font-style: italic;
         margin: 0;
         padding-top: 80px;
+        -webkit-animation: greeting 2s both;
+        animation: greeting 2s both;
     }
-    .typed p{
-        font-size: 3rem;
-    }
-    
 
+    @keyframes greeting {
+        0% {
+            opacity: 0;
+            transform: scale(4);
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .typed {
+        font-size: 3rem;
+        opacity: 0;
+        -webkit-animation: slideIn 2s both;
+        animation: slideIn 1s both;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
 }
 
-.contactMe{
-    border-radius: 50px; 
+.contactMe {
+    border-radius: 50px;
     padding: 10px 15px;
     background-color: $primary;
     color: white;
     font-size: 1.3rem;
-
 }
 
-.contactMe:hover{
+.contactMe:hover {
     background-image: linear-gradient(90deg, $peri, $secondary);
 }
-
-
-
