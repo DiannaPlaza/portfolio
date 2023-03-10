@@ -3,12 +3,17 @@
     margin-top: 50px;
 }
 
+
 .allProjects{
+    transform: translateX(400%);
+    transition: transform 0.9s ease-in-out;
     display: flex;
         .projectPhoto{
             width: 50%;
-            margin-bottom: 60px;
-            margin-right: 30px;
+            margin: 0 30px 60px 0;
+            img{
+                border-radius: 30px;
+            }
         }
 
         .projectText{
@@ -21,4 +26,13 @@
                 border:none;
             }
         }
+}
+
+.allProjects:nth-of-type(even){
+    transform: translateX(-400%)
+
+}
+
+.allProjects.show{
+    transform: translateX(0);
 }

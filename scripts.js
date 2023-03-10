@@ -1,16 +1,9 @@
-// function openNav() {
-//     document.getElementById("myNav").style.width = "100%";
-//   }
-  
-//   function closeNav() {
-//     document.getElementById("myNav").style.width = "0%";
-//   }
-
 const navMenu = document.querySelector(".navMenu");
 const navItems = document.querySelectorAll(".navItem");
 const burger = document.querySelector(".burger");
 const closeIcon = document.querySelector(".fa-xmark");
 const menuIcon = document.querySelector(".fa-bars");
+
 
 function toggleMenu() {
   if (navMenu.classList.contains("showNavMenu")) {
@@ -32,4 +25,21 @@ navItem.forEach(
     navItem.addEventListener("click", toggleMenu);
   }
 )
+
+const projects = document.querySelectorAll('.allProjects')
+window.addEventListener('scroll', checkProjects)
+  checkProjects()
+
+  function checkProjects(){
+    const triggerBottom = window.innerHeight / 5 * 4
+    projects.forEach(allProjects =>{
+      const projectTop = allProjects.getBoundingClientRect().top
+      if(projectTop < triggerBottom){
+        allProjects.classList.add('show')
+      } else{
+        allProjects.classList.remove('show')
+      }
+    })
+
+  }
 
