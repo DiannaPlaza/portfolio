@@ -1,6 +1,6 @@
 #about{
     background-color: $background;
-        h2{
+        h2, em{
             color: $primary;
         }
 }
@@ -11,22 +11,17 @@
     padding-bottom: 20px;
         .myInfo{
             width: 50%;
-            margin-right: 50px;
         }
         .myPhoto{
-            width: 50%;                
+            width: 30%;  
+            object-fit: cover;
+            img{
+                max-height: 100%;
+                border-radius: 10%;
+                box-shadow: 10px 5px 5px $primary;
+            }           
         }
 }
 
-.Photos{
-    height: 500px;
-    background-image: url('/assets/dianna.jpg');
-    background-size: contain;  
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
 
-.Photos:hover{
-    background-image: url('/assets/dianna-two.jpg');
-}
+

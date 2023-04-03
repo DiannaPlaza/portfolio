@@ -251,6 +251,7 @@ img {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -325,8 +326,7 @@ p {
 .navMenu a:hover, .navMenu a:focus {
   color: #F0A6CA;
   padding: 5px 10px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .burger {
@@ -402,6 +402,7 @@ header {
   animation: slideIn 1s both;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  overflow: hidden;
 }
 @-webkit-keyframes slideIn {
   0% {
@@ -442,7 +443,7 @@ header {
 #about {
   background-color: #F0E6EF;
 }
-#about h2 {
+#about h2, #about em {
   color: #F0A6CA;
 }
 
@@ -457,23 +458,17 @@ header {
 }
 .aboutContainer .myInfo {
   width: 50%;
-  margin-right: 50px;
 }
 .aboutContainer .myPhoto {
-  width: 50%;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-.Photos {
-  height: 500px;
-  background-image: url("/assets/dianna.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
-.Photos:hover {
-  background-image: url("/assets/dianna-two.jpg");
+.aboutContainer .myPhoto img {
+  max-height: 100%;
+  border-radius: 10%;
+  -webkit-box-shadow: 10px 5px 5px #F0A6CA;
+          box-shadow: 10px 5px 5px #F0A6CA;
 }
 
 .skills i {
@@ -507,14 +502,22 @@ header {
 }
 
 .allProjects {
+  -webkit-transform: translateX(400%);
+          transform: translateX(400%);
+  -webkit-transition: -webkit-transform 0.9s ease-in-out;
+  transition: -webkit-transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .allProjects .projectPhoto {
   width: 50%;
-  margin-bottom: 60px;
-  margin-right: 30px;
+  margin: 0 30px 60px 0;
+}
+.allProjects .projectPhoto img {
+  border-radius: 30px;
 }
 .allProjects .projectText {
   width: 50%;
@@ -525,6 +528,16 @@ header {
   background-color: #F0A6CA;
   color: white;
   border: none;
+}
+
+.allProjects:nth-of-type(even) {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+
+.allProjects.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .contactContainer {
@@ -610,6 +623,7 @@ footer {
   }
   .aboutContainer .myPhoto {
     width: 100%;
+    padding-bottom: 30px;
   }
   .skillsIcon li {
     padding: 20px;
@@ -660,12 +674,6 @@ footer {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-  }
-  .contactContainer .formContainer {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 @media (max-width: 660px) {
